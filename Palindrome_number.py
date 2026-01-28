@@ -22,9 +22,11 @@
 # Constraints:
 
 # -231 <= x <= 231 - 1
+
+#we can also print the string reverse and compare using slicing in strings
 """def isPalindrome(x: int) -> bool:
     str_x = str(x)
-    return str_x == str_x[::-1]""" 
+    return str_x == str_x[::-1]""" # for reference
 def isPalindrome(x: int) -> bool:
     ans=0
     temp=x
