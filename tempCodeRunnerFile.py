@@ -29,17 +29,14 @@
 # 2 <= nums.length <= 500
 # 0 <= nums[i] <= 100
 
-
-def SmallerThanCurrent(nums: list[int]) -> list[int]:
-    ans=[]
+def SmallerThanCurrent(nums:list[int]):
+    ans=0
     for i in nums:
         c=0
         for j in nums:
             if j<i:
                 c+=1
-        ans.append(c)
-    return ans
-
-print(SmallerThanCurrent([8,1,2,2,3]))
-print(SmallerThanCurrent([6,5,4,8]))
-
+        return ans
+nums=[]
+nums=list(int(input(nums)))
+print  (SmallerThanCurrent(nums))
