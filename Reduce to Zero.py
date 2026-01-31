@@ -36,13 +36,13 @@
 
 def numberOfSteps( num: int) -> int:
     c=0
-    while(num):
+    while num>0:
         c+=1
         if num%2==0:
-            num//=10
+            num//=2
             
         else :
-            num-1
+            num-=1
     
     return c
 print(numberOfSteps(14))
