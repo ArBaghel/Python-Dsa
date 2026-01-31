@@ -33,3 +33,16 @@
 # Constraints:
 
 # 0 <= num <= 106
+
+def numberOfSteps( num: int) -> int:
+    c=0
+    while(num):
+        c+=1
+        if num%2==0:
+            num//=10
+            
+        else :
+            num-1
+    
+    return c
+print(numberOfSteps(14))
