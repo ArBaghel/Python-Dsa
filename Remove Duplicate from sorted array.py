@@ -52,7 +52,7 @@ def removeDuplicates( nums: List[int]) -> int:
             s+=1
             nums[s]=nums[i]
     return s+1
-nums = [0,0,1,1,1,1,2,3,3]
-k = removeDuplicates(nums)
-
-print(k, nums)
+nums=[0,0,1,1,1,1,2,3,3]
+k=removeDuplicates(nums)
+print(k,nums)
+    
