@@ -43,6 +43,16 @@
 # // -104 <= nums[i] <= 104
 # // nums is sorted in non-decreasing order.
 
-# class Solution:
-#     def removeDuplicates(self, nums: List[int]) -> int:
-    
+from typing import List
+def removeDuplicates( nums: List[int]) -> int:
+    n=len(nums)
+    s=1
+    for i in range (2,n):
+        if nums[i]!=nums[s-1]:
+            s+=1
+            nums[s]=nums[i]
+    return s+1
+nums = [0,0,1,1,1,1,2,3,3]
+k = removeDuplicates(nums)
+
+print(k, nums)
