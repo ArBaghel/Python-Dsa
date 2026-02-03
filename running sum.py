@@ -34,3 +34,4 @@ def runningSum(nums: List[int]) -> List[int]:
         x=ans[i-1]+nums[i]
         ans.append(x)
     return ans
+print (runningSum([3,1,2,10,1]))
