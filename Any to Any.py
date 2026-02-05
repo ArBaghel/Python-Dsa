@@ -17,3 +17,19 @@
 # Sample Output
 # 11011
 def convert(sb,db,sn):
+    decimal=0
+    power_sb=1
+    while sn>0:
+        digit=sn%10
+        decimal+=digit*power_sb
+        sn//=10
+        power_sb*=sb
+    result=0
+    power_db=1
+    while decimal>0:
+        digit=decimal%db
+        result+=digit*power_db
+        decimal//=db
+        power_db*=10
+    return result
+print(convert(8,2,33))
