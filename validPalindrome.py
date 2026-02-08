@@ -47,3 +47,8 @@ class Solution:
             else:
                 return False    
         return True
+def main():
+    s=input()
+    print(Solution().isPalindrome(s))
+if __name__=="__main__":
+    main()
